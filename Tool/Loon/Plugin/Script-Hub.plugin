@@ -15,17 +15,17 @@
 force-http-engine-hosts = script.hub, *.script.hub
 
 [Script]
-http-request ^https?:\/\/script\.hub\/($|edit\/|reload) script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/script-hub.js, timeout = 30, tag = 前端界面
+http-request ^https?:\/\/script\.hub\/($|edit\/|reload) script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/script-hub.js, timeout = 30, tag = 前端界面
 
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=qx-rewrite script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/QX-Rewrite-Parser.js, timeout = 30, tag = 将Quantumult X资源转换至Loon
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=qx-rewrite script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/QX-Rewrite-Parser.js, timeout = 30, tag = 将Quantumult X资源转换至Loon
 
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=loon-plugin script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/Loon-Rewrite-Parser.js, timeout = 30, tag = 插件控制器
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=loon-plugin script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/Loon-Rewrite-Parser.js, timeout = 30, tag = 插件控制器
 
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=surge-module script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/Surge-Rewrite-Parser.js, timeout = 30, tag = 将Surge资源转换至Loon
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=surge-module script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/Surge-Rewrite-Parser.js, timeout = 30, tag = 将Surge资源转换至Loon
 
-http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/rule-parser.js, timeout = 30, tag = 规则转换
+http-request ^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/rule-parser.js, timeout = 30, tag = 规则转换
 
-http-request ^https?:\/\/script\.hub\/convert\/ script-path = https://gitlab.com/lodepuly/script-hub/-/raw/master/script-converter.js, timeout = 30, tag = 脚本转换
+http-request ^https?:\/\/script\.hub\/convert\/ script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/script-converter.js, timeout = 30, tag = 脚本转换
 
 [Mitm]
 hostname = script.hub, *.script.hub
