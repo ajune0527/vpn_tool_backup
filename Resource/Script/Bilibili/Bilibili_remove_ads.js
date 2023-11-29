@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/bilibili/bili.js
 */
-// 2023-11-29 22:25
+// 2023-11-30 01:00
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -13,69 +13,23 @@ if (url.includes("/x/resource/show/skin")) {
     delete obj.data.common_equip;
   }
 } else if (url.includes("/x/resource/show/tab/v2")) {
-  // 首页顶部tab
-  if (obj.data.tab) {
-    obj.data.tab = [ 
-      { 
-        id: 40, 
-        tab_id: "推荐tab", 
-        default_selected: 1, 
-        name: "推荐", 
-        uri: "bilibili://pegasus/promo", 
-        pos: 1 
-      }, 
-      { 
-        id: 41, 
-        tab_id: "hottopic", 
-        name: "热门", 
-        uri: "bilibili://pegasus/hottopic", 
-        pos: 2 
-      }, 
-      { 
-        id: 151, 
-        tab_id: "film", 
-        name: "影视", 
-        uri: "bilibili://pgc/cinema-tab", 
-        pos: 3 
-      }, 
-      { 
-        id: 545, 
-        tab_id: "bangumi", 
-        name: "动画", 
-        uri: "bilibili://pgc/home", 
-        pos: 4 
-      }, 
-      { 
-        id: 39, 
-        tab_id: "直播tab", 
-        name: "直播", 
-        uri: "bilibili://live/home", 
-        pos: 5 
-      } 
-    ]; 
-  }
-  if (obj?.data?.top?.length > 0) {
-    obj.data.top = [
-      {
-        id: 176,
-        icon: "http://i0.hdslb.com/bfs/archive/d43047538e72c9ed8fd8e4e34415fbe3a4f632cb.png",
-        tab_id: "消息Top",
-        name: "消息",
-        uri: "bilibili://link/im_home",
-        pos: 1
-      }
-    ];
-  }
+  // 底部选项卡
   if (obj?.data?.bottom?.length > 0) {
-    obj.data.bottom = obj.data.bottom.filter((i) => ["首页", "动态", "我的"]?.includes(i?.name));
-    fixPos(obj?.data?.bottom);
+    const sortLists = ["首页", "动态", "我的"];
+    obj.data.bottom = obj.data.bottom.filter((i) => sortLists?.includes(i?.name));
+    obj.data.bottom = obj.data.bottom.sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
   }
-  // 修复pos
-  function fixPos(arr) {
-    if (arr?.pos) {
-      for (let i = 0; i < arr.length; i++) {
-        arr[i].pos = i + 1;
-      }
+  // 首页导航栏
+  if (obj?.data?.tab?.length > 0) {
+    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
+    obj.data.tab = obj.data.tab.filter((i) => sortLists?.includes(i?.name));
+    obj.data.tab = obj.data.tab.sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
+  }
+  // 右上角按钮
+  if (obj?.data?.top?.length > 0) {
+    obj.data.top = obj.data.top.filter((i) => i?.name === "消息");
+    if (obj?.data?.top?.[0]?.pos) {
+      obj.data.top[0].pos = 1;
     }
   }
 } else if (url.includes("/x/resource/top/activity")) {
