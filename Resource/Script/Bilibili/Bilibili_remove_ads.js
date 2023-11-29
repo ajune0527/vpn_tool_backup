@@ -14,9 +14,45 @@ if (url.includes("/x/resource/show/skin")) {
   }
 } else if (url.includes("/x/resource/show/tab/v2")) {
   // 首页顶部tab
-  if (obj?.data?.tab?.length > 0) {
-    obj.data.tab = obj.data.tab.filter((i) => ["推荐", "热门", "动画", "影视", "直播"]?.includes(i?.name));
-    fixPos(obj?.data?.tab);
+  if (obj.data.tab) {
+    obj.data.tab = [ 
+      { 
+        id: 40, 
+        tab_id: "推荐tab", 
+        default_selected: 1, 
+        name: "推荐", 
+        uri: "bilibili://pegasus/promo", 
+        pos: 1 
+      }, 
+      { 
+        id: 41, 
+        tab_id: "hottopic", 
+        name: "热门", 
+        uri: "bilibili://pegasus/hottopic", 
+        pos: 2 
+      }, 
+      { 
+        id: 151, 
+        tab_id: "film", 
+        name: "影视", 
+        uri: "bilibili://pgc/cinema-tab", 
+        pos: 3 
+      }, 
+      { 
+        id: 545, 
+        tab_id: "bangumi", 
+        name: "动画", 
+        uri: "bilibili://pgc/home", 
+        pos: 4 
+      }, 
+      { 
+        id: 39, 
+        tab_id: "直播tab", 
+        name: "直播", 
+        uri: "bilibili://live/home", 
+        pos: 5 
+      } 
+    ]; 
   }
   if (obj?.data?.top?.length > 0) {
     obj.data.top = [
