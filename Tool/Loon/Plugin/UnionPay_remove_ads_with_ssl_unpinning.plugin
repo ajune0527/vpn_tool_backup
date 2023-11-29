@@ -4,7 +4,7 @@
 #!author = RuCu6
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/UnionPay.png
-#!date = 2023-11-24 19:40:55
+#!date = 2023-11-29 16:30:55
 
 [Rule]
 # 开屏广告
@@ -12,14 +12,10 @@ DOMAIN, ads.95516.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 DOMAIN, tysdk.95516.com, REJECT
 
-[Rewrite]
-# 银行精选
-^https:\/\/life\.95516\.com\/life\/inApp\/wealth\/home\/qryChoiceList reject-dict
-# 热门银行产品
-^https:\/\/life\.95516\.com\/life\/inApp\/wealth\/home\/qryTopList reject-dict
-
 [Script]
 http-response ^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body = true, tag = 移除云闪付推广
+http-response ^https:\/\/life\.95516\.com\/life\/inApp\/wealth\/home\/(qryChoiceList|qryTopList) script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body = true, tag = 移除云闪付推广
+
 
 [Mitm]
 hostname = base.95516.com, life.95516.com
