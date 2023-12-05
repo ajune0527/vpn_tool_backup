@@ -16,7 +16,7 @@
 force-http-engine-hosts = script.hub, *.script.hub
 
 [Rule]
-DOMAIN-SUFFIX, scripthub.vercel.app, PROXY
+DOMAIN, scripthub.vercel.app, PROXY
 
 [Script]
 http-request ^https?:\/\/script\.hub\/($|edit\/|reload) script-path = https://gitlab.com/lodepuly/script-hub/-/raw/main/script-hub.js, timeout = 30, tag = 前端界面
