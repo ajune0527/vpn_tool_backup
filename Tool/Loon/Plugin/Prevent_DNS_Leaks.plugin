@@ -4,7 +4,7 @@
 #!author = 非正常人类研究中心
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Prevent_DNS_Leaks.png
-#!date = 2023-09-08 13:48:55
+#!date = 2023-12-05 14:48:37
 
 # 你猜为什么会有这个插件呢？
 
@@ -38,3 +38,6 @@ DOMAIN-SUFFIX, pixelscan.net, PROXY
 # PING0
 DOMAIN, ipv4.ping0.cc, PROXY
 DOMAIN, ipv6.ping0.cc, PROXY
+
+# IPAPI.CO
+DOMAIN-SUFFIX, ipapi.co, PROXY
