@@ -1,5 +1,5 @@
 payload:
-# 2023-12-06 18:15:33
+# 2023-12-06 23:39:31
   - DOMAIN,api.statsig.com
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,cdn.openai.com
@@ -38,8 +38,9 @@ payload:
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openaicom-api
   - IP-CIDR,24.199.123.28/32,no-resolve
-  - IP-CIDR,45.76.214.191/32,no-resolve
   - IP-CIDR,45.32.12.145/32,no-resolve
+  - IP-CIDR,45.55.196.68/32,no-resolve
+  - IP-CIDR,45.76.214.191/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
   - IP-CIDR,104.238.150.13/32,no-resolve
   - IP-CIDR,143.198.200.27/32,no-resolve
