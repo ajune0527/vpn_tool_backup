@@ -1,4 +1,4 @@
-# 2023-12-07 13:32:37
+# 2023-12-07 15:52:20
 DOMAIN, api.statsig.com
 DOMAIN, browser-intake-datadoghq.com
 DOMAIN, cdn.openai.com
@@ -15,11 +15,9 @@ DOMAIN-SUFFIX, algolia.net
 DOMAIN-SUFFIX, auth0.com
 DOMAIN-SUFFIX, cdn.cloudflare.net
 DOMAIN-SUFFIX, challenges.cloudflare.com
-DOMAIN-SUFFIX, chatgpt.livekit.cloud
 DOMAIN-SUFFIX, client-api.arkoselabs.com
 DOMAIN-SUFFIX, events.statsigapi.net
 DOMAIN-SUFFIX, featuregates.org
-DOMAIN-SUFFIX, host.livekit.cloud
 DOMAIN-SUFFIX, identrust.com
 DOMAIN-SUFFIX, intercom.io
 DOMAIN-SUFFIX, intercomcdn.com
@@ -34,8 +32,11 @@ DOMAIN-SUFFIX, poe.com
 DOMAIN-SUFFIX, segment.io
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, stripe.com
-DOMAIN-SUFFIX, turn.livekit.cloud
 DOMAIN-KEYWORD, openaicom-api
+# 以下为ChatGPT语音合成服务的请求地址，可直连访问
+# DOMAIN-SUFFIX, chatgpt.livekit.cloud
+# DOMAIN-SUFFIX, host.livekit.cloud
+# DOMAIN-SUFFIX, turn.livekit.cloud
 # IP-CIDR, 24.199.123.28/32, no-resolve
 # IP-CIDR, 45.32.12.145/32, no-resolve
 # IP-CIDR, 45.55.196.68/32, no-resolve
