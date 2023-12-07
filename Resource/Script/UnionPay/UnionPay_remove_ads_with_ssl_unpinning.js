@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js
 */
-// 2023-12-07 17:55
+// 2023-12-07 18:00
 
 const url = $request.url;
 const header = $request.headers;
@@ -75,7 +75,7 @@ if (ua === "iPhone CHSP") {
                   // 移除项目列表
                   if (
                     [
-                      // "1002", // 卡管理页面-交易记录
+                      "1002", // 卡管理页面-交易记录
                       // "10102", // 首页顶栏-乘车码
                       // "1013", // 卡管理页面-余额查询
                       "10167", // 首页顶栏-理财信贷
