@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js
 */
-// 2023-12-07 16:45
+// 2023-12-07 17:15
 
 const url = $request.url;
 const header = $request.headers;
@@ -149,13 +149,21 @@ if (ua === "iPhone CHSP") {
       }
       obj.params.groups = newGroups;
     }
-  } else if (url.includes("/fortune/inApp/common/news")) {
+  } else if (url.includes("/fortune/inApp/common/")) {
     // 财富页面
+    if (obj?.params?.fundProductTabInfoList?.length > 0) {
+      // 零钱盈收 稳健精选 进阶攀升
+      obj.params.fundProductTabInfoList = [];
+    }
     if (obj?.params?.infoTabList?.length > 0) {
+      // 热点资讯 行情解读 投教课程
       obj.params.infoTabList = [];
     }
     if (obj?.params?.moreInfo) {
       obj.params.moreInfo = {};
+    }
+    if (obj?.params?.moreJumpUrlInfo) {
+      obj.params.moreJumpUrlInfo = {};
     }
   }
   // if (url.includes("/life/inApp/wealth/home/")) {
