@@ -24,7 +24,7 @@ DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
 # 字节跳动
 DOMAIN, ad.zijieapi.com, REJECT
 DOMAIN-KEYWORD, asiad.byteactivity, REJECT
-DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT-DROP
 
 # 阿里巴巴
 DOMAIN, ossgw.alicdn.com, REJECT
