@@ -4,7 +4,7 @@
 #!author = 可莉🅥 leepyer
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SevenCat.png
-#!date = 2023-12-11 22:01:16
+#!date = 2023-12-11 23:39:11
 
 [Rule]
 DOMAIN, cdn-new-ad.wtzw.com, REJECT-DICT
@@ -31,7 +31,7 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # 正文底部推广
 ^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
 # 底栏提现红点
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject-dict
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject
 
 # 其他广告
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/reward\/ reject
