@@ -26,6 +26,11 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/api-bc\.wtzw\.com\/api\/v1\/operation reject-dict
 # 头条广告SDK
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
+# 听书赚金币
+^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v1\/task\/red-packet reject-dict
+# 正文底部推广
+^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
+
 # 其他广告
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/reward\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/adv\/ reject
@@ -34,4 +39,4 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject-dict
 
 [Mitm]
-hostname = api-cfg.wtzw.com, xiaoshuo.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com
+hostname = api-cfg.wtzw.com, xiaoshuo.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com
