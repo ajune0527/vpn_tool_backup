@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SevenCat.png
-#!date = 2023-12-11 16:50:48
+#!date = 2023-12-11 17:10:30
 
 [Rule]
 DOMAIN, cdn-new-ad.wtzw.com, REJECT-DICT
@@ -20,8 +20,11 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center reject
 # 腾格尔打卡喵喵歌
 ^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v2\/init\/other-data reject-dict
 # 必读榜弹窗
 ^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/config reject-dict
+# 推荐书籍弹窗
+^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/push-book reject-dict
 # 头条广告SDK
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 
