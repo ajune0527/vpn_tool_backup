@@ -20,6 +20,8 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center reject
 # 腾格尔打卡喵喵歌
 ^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
+# 必读榜弹窗
+^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/config reject-dict
 # 头条广告SDK
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 
