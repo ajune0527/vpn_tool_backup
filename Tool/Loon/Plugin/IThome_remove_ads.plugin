@@ -7,7 +7,7 @@
 #!select = 移除置顶项, 开启, 关闭
 #!select = 移除轮播图广告, 开启, 关闭
 #!select = 移除全部轮播图, 开启, 关闭
-#!date = 2023-12-11 19:45:31
+#!date = 2023-12-11 20:58:07
 
 [Rewrite]
 ^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao reject
