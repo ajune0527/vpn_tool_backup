@@ -7,12 +7,12 @@
 #!date = 2023-12-11 15:21:11
 
 [Rule]
-DOMAIN, cdn-new-ad.wtzw.com, REJECT
+DOMAIN, cdn-new-ad.wtzw.com, REJECT-DICT
 
 [Rewrite]
-^https:\/\/api-cfg\.wtzw\.com\/v1\/offline-adv\/index reject
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject
-^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject
+^https:\/\/api-cfg\.wtzw\.com\/v1\/offline-adv\/index reject-dict
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject-dict
+^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject-dict
 
 [Mitm]
 hostname = api-cfg.wtzw.com, xiaoshuo.wtzw.com
