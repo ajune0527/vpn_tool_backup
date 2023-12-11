@@ -30,6 +30,8 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v1\/task\/red-packet reject-dict
 # 正文底部推广
 ^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
+# 底栏提现红点
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject-dict
 
 # 其他广告
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/reward\/ reject
