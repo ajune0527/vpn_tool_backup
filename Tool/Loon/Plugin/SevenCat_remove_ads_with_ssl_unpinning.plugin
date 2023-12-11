@@ -16,28 +16,28 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # 福利中心
 ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center reject
 # 腾格尔打卡喵喵歌
-^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v2\/init\/other-data reject-dict
+# ^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
+# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v2\/init\/other-data reject-dict
 # 必读榜弹窗
 ^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/config reject-dict
 # 推荐书籍弹窗
-^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/push-book reject-dict
+# ^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/push-book reject-dict
 # 有声阅读界面广告横幅
-^https:\/\/api-bc\.wtzw\.com\/api\/v1\/operation reject-dict
+# ^https:\/\/api-bc\.wtzw\.com\/api\/v1\/operation reject-dict
 # 头条广告SDK
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 # 听书赚金币
 ^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v1\/task\/red-packet reject-dict
 # 正文底部推广
-^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
+# ^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
 # 底栏提现红点
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject-dict
+# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject-dict
 
 # 其他广告
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/reward\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/adv\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/offline-adv\/index reject-dict
-^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject-dict
+# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject-dict
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject-dict
 
 [Script]
