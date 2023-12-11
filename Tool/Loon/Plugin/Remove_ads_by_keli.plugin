@@ -77,7 +77,7 @@ URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/startup, REJECT
 URL-REGEX, ^http:\/\/rich\.kuwo\.cn\/AdService, REJECT
 
 # 小米
-DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
+DOMAIN, sdkconfig.ad.xiaomi.com, REJECT-DROP
 DOMAIN, data.mistat.xiaomi.com, REJECT
 DOMAIN, tracking.intl.miui.com, REJECT
 # 米家
