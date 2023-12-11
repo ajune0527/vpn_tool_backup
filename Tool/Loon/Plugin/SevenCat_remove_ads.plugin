@@ -13,6 +13,8 @@ DOMAIN, cdn-new-ad.wtzw.com, REJECT-DICT
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/offline-adv\/index reject-dict
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject-dict
 ^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject-dict
+# 福利中心
+^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center reject
 
 [Mitm]
 hostname = api-cfg.wtzw.com, xiaoshuo.wtzw.com
