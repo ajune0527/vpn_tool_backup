@@ -7,7 +7,7 @@ const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-if (url.includes("//user/my-center")) {
+if (url.includes("/user/my-center")) {
   // 我的页面
   if (obj?.data?.user_area?.vip_info) {
     // 开通会员卡片
