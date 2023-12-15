@@ -33,7 +33,7 @@ http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\? scr
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除信息流广告
 
 # 移除图片和视频水印
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v1\/note\/imagefeed|v2\/note\/feed|v3\/note\/videofeed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除图片和视频水印
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除图片和视频水印
 
 # 移除实况照片水印
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/live_photo\/save script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除实况照片水印
