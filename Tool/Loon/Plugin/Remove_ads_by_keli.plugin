@@ -4,27 +4,35 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2023-11-25 00:31:09
+#!date = 2023-12-17 02:52:04
 
 [Rule]
-# 广告联盟
+# 字节跳动 - 广告服务商
 DOMAIN, ad.zijieapi.com, REJECT
 DOMAIN, i.snssdk.com, REJECT
 DOMAIN, is.snssdk.com, REJECT
-DOMAIN, open.e.kuaishou.com, REJECT
-DOMAIN-SUFFIX, miaozhen.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -tos.pstatp.com, REJECT-DROP
 DOMAIN-KEYWORD, asiad.byteactivity, REJECT
-DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, pangolin.snssdk.com, REJECT
+DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, pglstatp-toutiao, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
 
-# 字节跳动
-DOMAIN, ad.zijieapi.com, REJECT
-DOMAIN-KEYWORD, asiad.byteactivity, REJECT
-DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+# 快手联盟 - 广告服务商
+DOMAIN, open.e.kuaishou.com, REJECT
+
+# 秒针系统 - 广告服务商
+DOMAIN-SUFFIX, miaozhen.com, REJECT
+
+# 达佳互联 - 广告服务商
+DOMAIN-SUFFIX, adukwai.com, REJECT
+
+# 艾狄墨搏 - 广告服务商
+DOMAIN-SUFFIX, admobile.top, REJECT
+
+# 极光 - 广告服务商
+DOMAIN-SUFFIX, jiguang.cn, REJECT
 
 # 阿里巴巴
 DOMAIN, ossgw.alicdn.com, REJECT
