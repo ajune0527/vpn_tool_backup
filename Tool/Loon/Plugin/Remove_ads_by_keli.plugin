@@ -39,7 +39,7 @@ DOMAIN-SUFFIX, union.baidu.cn, REJECT
 DOMAIN-SUFFIX, union.baidu.com, REJECT
 
 # 腾讯优量汇 - 广告服务商
-# DOMAIN-SUFFIX, mi.gdt.qq.com, REJECT
+# DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
 # 阿里巴巴
 DOMAIN, ossgw.alicdn.com, REJECT
@@ -278,7 +278,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do reject-di
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList reject
 
 [Script]
-# 快手联盟、优量汇、穿山甲
+# 快手联盟、腾讯优量汇、字节跳动穿山甲
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
