@@ -8,3 +8,9 @@ payload:
   - DOMAIN,pki.eset.com
   - DOMAIN,versioncheck.eset.com
   - DOMAIN,edf.eset.com
+
+# PICO更新
+  - DOMAIN,pico.eset.com
+
+# 下载检测引擎更新
+  - DOMAIN,um01.cn.eset.com
