@@ -652,14 +652,14 @@ payload:
 # Hikari Field游戏下载及更新[国际]
   - DOMAIN,download.hikarifield.co.jp
 
-# Dlsite游戏下载
+# Dlsite游戏下载[国际]
   - DOMAIN,download.dlsite.com
   - DOMAIN,file.chobit.cc
   - DOMAIN,img.dlsite.jp
   - DOMAIN,play.dl.dlsite.com
   - DOMAIN,trial.dlsite.com
 
-# Bandai Namco万代南梦宫
+# Bandai Namco万代南梦宫[国际]
   - DOMAIN,account.bandainamcoid.com
   - DOMAIN,account-api.bandainamcoid.com
   - DOMAIN,clientpatch.aws.blue-protocol.com
