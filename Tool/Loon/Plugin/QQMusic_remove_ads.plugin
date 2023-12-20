@@ -4,23 +4,23 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQMusic.png
-#!date = 2023-10-25 15:42:01
+#!date = 2023-12-20 16:47:45
 
 [Rule]
-DOMAAIN, adstats.tencentmusic.com, REJECT
-DOMAAIN, ad.tencentmusic.com, REJECT
-DOMAAIN, adcdn.tencentmusic.com, REJECT
-DOMAAIN, adexpo.tencentmusic.com, REJECT
-DOMAAIN, adclick.tencentmusic.com, REJECT
-DOMAAIN, otheve.beacon.qq.com, REJECT
-DOMAAIN, monitor.music.qq.com, REJECT
-DOMAAIN, stat.y.qq.com, REJECT
-DOMAAIN, tmead.y.qq.com, REJECT
-DOMAAIN, oth.str.mdt.qq.com, REJECT
-DOMAAIN, h.trace.qq.com, REJECT
-DOMAAIN, tmead.y.qq.com, REJECT
-DOMAAIN, sdk.e.qq.com, REJECT
-DOMAAIN, p.l.qq.com, REJECT
-DOMAAIN, us.l.qq.com, REJECT
-DOMAAIN, tangram.e.qq.com, REJECT
+DOMAIN, adstats.tencentmusic.com, REJECT
+DOMAIN, ad.tencentmusic.com, REJECT
+DOMAIN, adcdn.tencentmusic.com, REJECT
+DOMAIN, adexpo.tencentmusic.com, REJECT
+DOMAIN, adclick.tencentmusic.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, monitor.music.qq.com, REJECT
+DOMAIN, stat.y.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, oth.str.mdt.qq.com, REJECT
+DOMAIN, h.trace.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, p.l.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN, tangram.e.qq.com, REJECT
 DOMAIN-SUFFIX, imtmp.net, REJECT
