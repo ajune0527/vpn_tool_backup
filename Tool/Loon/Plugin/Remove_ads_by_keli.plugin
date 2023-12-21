@@ -264,7 +264,7 @@ IP-CIDR6, 2405:1480:3000:303f::303f/128, REJECT, no-resolve
 ^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 reject-200
 
 # 山东移动 //m.sd.10086.cn
-https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do reject-dict
+https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do reject-dict
 
 # 广西移动 //gx.10086.cn
 ^https?:\/\/gx\.10086\.cn\/zt-portal\/gxhzg\/portal\/app\/api\/v reject
