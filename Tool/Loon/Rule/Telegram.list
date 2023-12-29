@@ -4,6 +4,7 @@ DOMAIN-SUFFIX, contest.com
 DOMAIN-SUFFIX, graph.org
 DOMAIN-SUFFIX, legra.ph
 DOMAIN-SUFFIX, mbrx.app
+DOMAIN-SUFFIX, nicegram.app
 DOMAIN-SUFFIX, quiz.directory
 DOMAIN-SUFFIX, stel.com
 DOMAIN-SUFFIX, t.me
@@ -20,4 +21,4 @@ DOMAIN-SUFFIX, telesco.pe
 DOMAIN-SUFFIX, tg.dev
 DOMAIN-SUFFIX, tx.me
 DOMAIN-SUFFIX, usercontent.dev
-DOMAIN-KEYWORD, nicegram
+# DOMAIN-KEYWORD, nicegram
