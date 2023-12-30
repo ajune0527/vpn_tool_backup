@@ -1,12 +1,15 @@
 # Author: 可莉🅥
-# Date: 2023-12-30 18:13:23
+# Date: 2023-12-30 18:18:26
 DOMAIN, api.msn.com
 DOMAIN, dealczars.bing-shopping.microsoft-falcon.io
 DOMAIN, gateway.bingviz.microsoftapp.net
 DOMAIN, location.microsoft.com
 DOMAIN, self.events.data.microsoft.com
+DOMAIN, services.bingapis.com
 DOMAIN, shopping.bing-shopping.microsoft-falcon.io
 DOMAIN, sapphire.api.microsoftapp.net
+DOMAIN, sr.bing.com
 DOMAIN, sydney.bing.com
 DOMAIN, ssl.bing.com
 DOMAIN, www.bing.com
+DOMAIN, www.bingapis.com
