@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2023-12-25 18:41:58
+#!date = 2024-01-11 20:57:25
 
 [Rule]
 # 字节跳动 - 广告服务商
@@ -156,16 +156,6 @@ IP-CIDR6, 2405:1480:3000:303f::303f/128, REJECT, no-resolve
 
 # 最右
 ^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/ reject
-
-#网易新闻
-^https?:\/\/interface\.music\.163\.com\/eapi\/ad reject
-^https?:\/\/c\.m\.163\.com\/nc\/gl\/ reject
-^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds reject
-^https?:\/\/g1\.163\.com\/madfeedback reject
-^https?:\/\/nex\.163\.com\/q reject
-^https?:\/\/interface\.music\.163\.com\/eapi\/ad\/ reject
-^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json reject
-^https?:\/\/interface3?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot)) reject
 
 # 米家
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
