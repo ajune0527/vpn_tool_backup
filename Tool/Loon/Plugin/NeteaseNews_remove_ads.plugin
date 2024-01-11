@@ -6,6 +6,10 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NeteaseNews.png
 #!date = 2024-01-11 15:20:40
 
+[Rule]
+# 放行规则
+DOMAIN, nex.163.com, DIRECT
+
 [Script]
 # 移除网易新闻广告
 http-response ^https:\/\/nex\.163\.com\/q script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/NeteaseNews/NeteaseNews_remove_ads.js, requires-body = true, tag = 移除网易新闻广告
