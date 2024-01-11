@@ -17,25 +17,6 @@ switch (isResp) {
       console.log(`网易新闻, 出现异常: ` + error);
     }
     break;
-  // 小爱音箱-开屏广告
-  case /^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert/g.test(url):
-    try {
-      let obj = JSON.parse(body);
-      let data = [];
-      for (let i = 0; i < obj.data.length; i++) {
-        let ad = obj.data[i];
-        ad.start = "3818332800000";
-        ad.end = "3818419199000";
-        ad.stay = 1;
-        ad.maxTimes = 1;
-        data.push(ad);
-      }
-      obj.data = data;
-      body = JSON.stringify(obj);
-    } catch (error) {
-      console.log(`小爱音箱-开屏广告, 出现异常: ` + error);
-    }
-    break;
   default:
     $done({});
 }
