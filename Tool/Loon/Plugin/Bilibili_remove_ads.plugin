@@ -1,10 +1,10 @@
 #!name = Bilibili去广告
-#!desc = 过滤Bilibili广告、移除青少年模式弹窗和交互式弹幕、移除无用功能。此插件仅建议iOS 15以上设备使用，且必须启用MitM-over-HTTP/2功能。
+#!desc = 过滤Bilibili广告、移除青少年模式弹窗和交互式弹幕、移除无用功能和链接跟踪参数。此插件仅建议iOS 15以上设备使用，且必须启用MitM-over-HTTP/2功能。
 #!openUrl = 
 #!author = Maasea RuCu6
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.png
-#!date = 2024-01-06 12:10:27
+#!date = 2024-01-13 23:48:40
 
 [Rule]
 # 开屏广告
@@ -36,6 +36,8 @@ URL-REGEX, ^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH, REJECT-DICT
 # IP请求、地理位置请求 //api.bilibili.com
 ^https:\/\/app\.bilibili\.com\/x\/resource\/ip reject
 ^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp reject-200
+# 移除链接跟踪参数
+(^https:\/\/www\.bilibili\.com\/video\/BV\w{10})((\?buvid=.*)|(\/\?share_source=.*)) 302 $1
 
 [Script]
 # 移除播放页面视频列表广告
