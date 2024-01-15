@@ -3,7 +3,7 @@
 #!openUrl = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/Resource/Markdown/Spotify/README.md
 #!author = app2smile
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Spotify.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Spotify.jxl
 #!input = baidu_appid
 #!input = baidu_securityKey
 #!date = 2023-10-05 21:46:25
