@@ -9,14 +9,10 @@
 [Rule]
 DOMAIN, ads3-normal-lq.zijieapi.com, REJECT
 DOMAIN, ads5-normal-lq.zijieapi.com, REJECT
-DOMAIN, api5-normal-lq.fqnovel.com, REJECT
-DOMAIN, frontier.fqnovel.com, REJECT
-DOMAIN, log3-applog-lq.fqnovel.com, REJECT
-DOMAIN, log5-applog-lq.fqnovel.com, REJECT
-DOMAIN, mon3-misc-lq.fqnovel.com, REJECT
+DOMAIN, ads3-normal.zijieapi.com, REJECT
+DOMAIN, ads5-normal.zijieapi.com, REJECT
 DOMAIN, p6-ad-sign.byteimg.com, REJECT
 DOMAIN, p9-ad-sign.byteimg.com, REJECT
-DOMAIN-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
 URL-REGEX, ^http://.+.byteimg.com/ad-app-package, REJECT
 URL-REGEX, ^http://.+.byteimg.com/web.business.image, REJECT
 URL-REGEX, ^http:\/\/lf\d-reading\.fqnovelpic\.com\/obj\/novel-common\/img_.*tip_, REJECT
