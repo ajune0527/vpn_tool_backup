@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-01-15 23:22:24
+#!date = 2024-01-17 21:36:25
 
 [Rule]
 # 字节跳动 - 广告服务商
@@ -65,6 +65,7 @@ DOMAIN, pgdt.gtimg.cn, REJECT
 DOMAIN, tpns.qq.com, REJECT
 DOMAIN, vv.video.qq.com, REJECT
 DOMAIN, vv6.video.qq.com, REJECT
+DOMAIN, up-hl.3g.qq.com, REJECT-NO-DROP
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
