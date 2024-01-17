@@ -1,48 +1,26 @@
 #!name = 番茄小说去广告
 #!desc = 过滤番茄小说底部和章末广告
 #!openUrl = 
-#!author = zqzess
+#!author = zqzess 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2023-09-11 13:48:55
+#!date = 2024-01-17 21:34:03
 
 [Rule]
+DOMAIN, ads3-normal-lq.zijieapi.com, REJECT
+DOMAIN, ads5-normal-lq.zijieapi.com, REJECT
+DOMAIN, api5-normal-lq.fqnovel.com, REJECT
+DOMAIN, frontier.fqnovel.com, REJECT
+DOMAIN, log3-applog-lq.fqnovel.com, REJECT
+DOMAIN, log5-applog-lq.fqnovel.com, REJECT
+DOMAIN, mon3-misc-lq.fqnovel.com, REJECT
+DOMAIN, mon11-misc-lq.fqnovel.com, REJECT
 DOMAIN, p6-ad-sign.byteimg.com, REJECT
 DOMAIN, p9-ad-sign.byteimg.com, REJECT
-DOMAIN-SUFFIX, byteimg.com, DIRECT
-DOMAIN, i.snssdk.com, REJECT
-DOMAIN, i-lq.snssdk.com, REJECT
-DOMAIN, dig.bdurl.net, REJECT
-DOMAIN-KEYWORD, zijieapi, REJECT
-DOMAIN, activity-ag.awemeughun.com, REJECT
-
-DOMAIN, mcs.snssdk.com, REJECT
-DOMAIN, tnc3-alisc1.snssdk.com, REJECT
-DOMAIN, security-lq.snssdk.com, REJECT
-DOMAIN, tnc3-aliec2.snssdk.com, REJECT
-DOMAIN, is.snssdk.com, REJECT
-DOMAIN, i.snssdk.com, REJECT
-
-DOMAIN, v6-novelapp.ixigua.com, REJECT
-DOMAIN, *novelapp.ixigua.com, REJECT
-DOMAIN, *default.ixigua.com, REJECT
-DOMAIN, msync-im1-vip6-std.easemob.com, REJECT
-DOMAIN, apd-pcdnwxlogin.teg.tencent-cloud.net, REJECT
-DOMAIN, api.iegadp.qq.com, REJECT
-DOMAIN, sf3-ttcdn-tos.pstatp.com, REJECT
-DOMAIN-SUFFIX, pglstatp-toutiao.com, REJECT
-
-
-DOMAIN-SUFFIX, byteorge.com, REJECT
-DOMAIN-SUFFIX, bytegoofy.com, REJECT
-DOMAIN-SUFFIX, bytedance.com, REJECT
-
-IP-CIDR, 49.71.37.101/32, REJECT, no-resolve
-IP-CIDR, 117.71.105.23/32, REJECT, no-resolve
-IP-CIDR, 218.94.207.205/32, REJECT, no-resolve
-IP-CIDR, 117.92.229.188/32, REJECT, no-resolve
-IP-CIDR, 101.36.166.16/32, REJECT, no-resolve
-IP-CIDR, 180.96.2.114/32, REJECT, no-resolve
+DOMAIN-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
+URL-REGEX, ^http://.+.byteimg.com/ad-app-package, REJECT
+URL-REGEX, ^http://.+.byteimg.com/web.business.image, REJECT
+URL-REGEX, ^http:\/\/lf\d-reading\.fqnovelpic\.com\/obj\/novel-common\/img_.*tip_, REJECT
 
 [Rewrite]
 # 番茄小说去章末广告
@@ -57,12 +35,11 @@ IP-CIDR, 180.96.2.114/32, REJECT, no-resolve
 ^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ reject
 ^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 reject
 ^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ reject
-^http:\/\/.+\.byteimg\.com\/ad-app-package reject
-^http:\/\/.+\.byteimg\.com\/web\.business\.image reject
-# .+web\.business\.image reject
 
-# 下面两条来自他人，暂不知是哪个app
-^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ reject
+^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
+^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
+^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/ reject
+^https:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/ reject
 
 [Mitm]
-hostname = *.pangolin-sdk-toutiao, *.pangolin-sdk-toutiao.*, *.pstatp.com, *.pstatp.com.*, *.pglstatp-toutiao.com.*, *.pglstatp-toutiao.com, gurd.snssdk.com, gurd.snssdk.com.*, *default.ixigua.com
+hostname = *.pangolin-sdk-toutiao.com, *.pglstatp-toutiao.com, *.pstatp.com, *.snssdk.com, lf-cdn-tos.bytescm.com, sf3-fe-tos.pglstatp-toutiao.com, api-access.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao1.com
