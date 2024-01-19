@@ -8,14 +8,6 @@
 #!date = 2024-01-20 02:33:16
 
 [Rule]
-IP-CIDR, 103.136.222.0/24, PROXY, no-resolve
-IP-CIDR, 103.136.221.0/24, PROXY, no-resolve
-IP-CIDR, 103.136.220.0/24, PROXY, no-resolve
-IP-CIDR, 103.136.220.0/23, PROXY, no-resolve
-IP-CIDR, 118.26.132.0/24, PROXY, no-resolve
-IP-CIDR6, 2404:9dc0:cd03::/48, PROXY, no-resolve
-IP-CIDR6, 2404:9dc0:cd01::/48, PROXY, no-resolve
-IP-ASN, 138699, PROXY, no-resolve
 DOMAIN, lf16-effectcdn.byteeffecttos-g.com, PROXY
 DOMAIN, lf16-pkgcdn.pitaya-clientai.com, PROXY
 DOMAIN, p16-tiktokcdn-com.akamaized.net, PROXY
@@ -42,6 +34,7 @@ DOMAIN-SUFFIX, tiktokmusic.app, PROXY
 DOMAIN-SUFFIX, tiktokv.com, PROXY
 DOMAIN-KEYWORD, musical.ly, PROXY
 DOMAIN-KEYWORD, tiktok, PROXY
+USER-AGENT, TikTok*, PROXY
 
 [Script]
 http-request ^https?:\/\/((tnc|dm)[\w-]+.+?\.com\/.+|.+\.(byteoversea|tiktokv).com\/.+(_region=CN&|&mcc_mnc=4)) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TikTok/TikTok_redirect.js, tag = TikTok解锁
