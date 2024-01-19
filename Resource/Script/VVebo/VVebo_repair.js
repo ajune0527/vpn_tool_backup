@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
 */
-// 2024-01-19 15:38:29
+// 2023-11-27 15:06:27
 
 let url = $request.url;
 let hasUid = (url) => url.includes("uid");
@@ -12,7 +12,7 @@ if (url.includes("users/show")) {
 } else if (url.includes("statuses/user_timeline")) {
   let uid = getUid(url) || $persistentStore.read("uid");
   url = url.replace("statuses/user_timeline", "profile/statuses/tab").replace("max_id", "since_id");
-  url = url + &containerid=230413${uid}_-_WEIBO_SECOND_PROFILE_WEIBO;
+  url = url + `&containerid=230413${uid}_-_WEIBO_SECOND_PROFILE_WEIBO`;
   $done({ url });
 } else if (url.includes("profile/statuses/tab")) {
   let data = JSON.parse($response.body);
