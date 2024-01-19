@@ -4,11 +4,11 @@
 #!author = ZenmoFeiShi
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/smzdm.png
-#!date = 2024-01-19 16:38:54
+#!date = 2024-01-19 16:58:50
 
 [Rule]
 DOMAIN, aaid.uyunad.com, REJECT
-DOMAIN, acs4baichuan.m.taobao.com:80, REJECT
+DOMAIN, acs4baichuan.m.taobao.com, REJECT
 DOMAIN, adashxgc.ut.taobao.com, REJECT
 DOMAIN, analytics-api.smzdm.com, REJECT
 DOMAIN, baichuan-sdk.alicdn.com, REJECT
