@@ -4,11 +4,12 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQKSong.png
-#!date = 2024-01-20 12:07:59
+#!date = 2024-01-20 12:27:49
 
 [Rule]
 DOMAIN, ii.gdt.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
 DOMAIN, tmead.y.qq.com, REJECT-DICT
 DOMAIN, tmeadkg.y.qq.com, REJECT-DICT
 
