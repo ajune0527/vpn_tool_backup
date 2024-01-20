@@ -1,5 +1,5 @@
 #!name = 全民K歌去广告
-#!desc = 过滤全民K歌广告
+#!desc = 移除开屏广告、歌房页面弹窗广告、消息页广告和我的页面广告。
 #!openUrl = 
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
