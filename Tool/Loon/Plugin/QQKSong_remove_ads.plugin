@@ -1,0 +1,19 @@
+#!name = 全民K歌去广告
+#!desc = 过滤全民K歌广告
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQKSong.png
+#!date = 2024-01-20 11:43:16
+
+[Rule]
+DOMAIN, tmead.y.qq.com, REJECT-DICT
+DOMAIN, tmeadkg.y.qq.com, REJECT-DICT
+
+[Rewrite]
+^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
+^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ reject-dict
+^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\/ reject-dict
+
+[Mitm]
+hostname = wallpaper-1258344696.file.myqcloud.com, amsweb-cdn-gz-1258344696.file.myqcloud.com
