@@ -19,7 +19,7 @@ URL-REGEX, ^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\/
 ^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
 ^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ reject-dict
 ^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\/ reject-dict
-^https:\/\/adsmind\.gdtimg\.com\/ads_svp_video.*(jpeg|jpg|png|webp) reject-video
+^https:\/\/adsmind\.gdtimg\.com\/ads_svp_video.*(jpeg|jpg|png|webp) reject-img
 ^https:\/\/adsmind\.gdtimg\.com\/ads_svp_video.*mp4 reject-video
 
 [Mitm]
