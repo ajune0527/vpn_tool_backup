@@ -7,11 +7,13 @@
 #!date = 2024-01-20 12:27:49
 
 [Rule]
+DOMAIN, adsmind.gdtimg.com, REJECT
 DOMAIN, ii.gdt.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
 DOMAIN, us.l.qq.com, REJECT
-DOMAIN, tmead.y.qq.com, REJECT-DICT
-DOMAIN, tmeadkg.y.qq.com, REJECT-DICT
+DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadkg.y.qq.com, REJECT-NO-DROP
+
 
 [Rewrite]
 ^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
