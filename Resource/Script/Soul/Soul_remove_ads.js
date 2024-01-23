@@ -1,34 +1,29 @@
 /*
-脚本引用https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Soul.js
+脚本引用
 */
-//2024-01-22 22:22  感谢@可莉对去除开屏广告提供的帮助
+// 2024-01-23 10:45
+
 const url = $request.url;
-const scriptEnvironment = typeof $task != 'undefined' ? 'Surge' : (typeof $loon != 'undefined' ? 'Loon' : (typeof $httpClient != 'undefined' ? 'Qx' : 'Unknown'));
-if (!$response.body || scriptEnvironment === 'Unknown') {
-  $done({});
-}
+if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-const shouldDeleteData = (url) => {
-  return url.includes("/post/homepage/guide/card") ||
-         url.includes("/furion/position/content") ||
-         url.includes("/hot/soul/rank") ||
-         url.includes("/post/gift/list") ||
-         url.includes("/mobile/app/version/queryIos") ||
-         url.includes("/teenager/config") ||
-        //  url.includes("/winterfell/v2/getIpByDomain");
-};
-
-const shouldModifyLimitInfo = (url, obj) => {
-  return url.includes("/chat/limitInfo") && obj.data && obj.data.limit !== undefined;
-};
-
-if (!obj.data || shouldDeleteData(url)) {
-  delete obj.data;
-}
-
-if (shouldModifyLimitInfo(url, obj)) {
-  obj.data.limit = false;
+if (url.includes("/chat/limitInfo")) {
+  if (obj?.data?.limit) {
+    obj.data.limit = false;
+  }
+} else if (
+  url.includes("/furion/position/content") ||
+  url.includes("/hot/soul/rank") ||
+  url.includes("/mobile/app/version/queryIos") ||
+  url.includes("/post/gift/list") ||
+  url.includes("/post/homepage/guide/card") ||
+  url.includes("/teenager/config")
+) {
+  if (obj?.data) {
+    delete obj.data;
+  }
+} else {
+  $done({});
 }
 
 $done({ body: JSON.stringify(obj) });
