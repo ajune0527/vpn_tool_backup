@@ -1,10 +1,10 @@
 #!name = Soul去广告
-#!desc = 移除Soul广告
+#!desc = 移除Soul广告，使用前需要在此插件配置页面指派策略。
 #!openUrl = 
-#!author = RuCu6
+#!author = ZenmoFeiShi RuCu6 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool//tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Soul.png
-#!date = 2024-01-23 16:02:36
+#!date = 2024-01-23 16:07:01
 
 [Rule]
 # 地理位置 - 需要在插件页面指派策略
@@ -30,4 +30,4 @@ http-response ^https:\/\/api-account\.soulapp\.cn\/teenager\/config script-path 
 http-response ^https:\/\/47\.110\.187\.87\/winterfell\/v2\/getIpByDomain script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
 
 [Mitm]
-hostname = ssp.soulapp.cn
+hostname = ssp.soulapp.cn, api-a.soulapp.cn, gateway-mobile-gray.soulapp.cn, api-chat.soulapp.cn, post.soulapp.cn, api-user.soulapp.cn, api-account.soulapp.cn
