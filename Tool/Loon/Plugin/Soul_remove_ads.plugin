@@ -1,0 +1,33 @@
+#!name = Soul去广告
+#!desc = 移除Soul广告
+#!openUrl = 
+#!author = RuCu6
+#!homepage = https://gitlab.com/lodepuly/vpn_tool//tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Soul.png
+#!date = 2024-01-23 16:02:36
+
+[Rule]
+# 地理位置 - 需要在插件页面指派策略
+IP-CIDR, 8.210.3.170/32, PROXY, no-resolve
+IP-CIDR, 47.56.131.76/32, PROXY, no-resolve
+IP-CIDR, 47.75.72.47/32, PROXY, no-resolve
+
+# 开屏广告下发
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+
+[Rewrite]
+# 开屏广告
+^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
+
+[Script]
+http-response ^https:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/post\.soulapp\.cn\/hot\/soul\/rank script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-user\.soulapp\.cn\/furion\/position\/content script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-account\.soulapp\.cn\/teenager\/config script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/47\.110\.187\.87\/winterfell\/v2\/getIpByDomain script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+
+[Mitm]
+hostname = ssp.soulapp.cn
