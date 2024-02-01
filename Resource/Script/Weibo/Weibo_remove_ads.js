@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
 */
-// 2024-01-24 16:25
+// 2024-02-01 16:45
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -689,8 +689,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                   if (item?.items?.length > 0) {
                     let newII = [];
                     for (let ii of item.items) {
-                      // 118横版广告图片 182热议话题 217错过了热词 247横版视频广告
-                      if ([118, 182, 217, 247]?.includes(ii?.data?.card_type)) {
+                      // 118横版广告图片 182热议话题 192横版好看视频 217错过了热词 247横版视频广告
+                      if ([118, 182, 192, 217, 247]?.includes(ii?.data?.card_type)) {
                         continue;
                       } else {
                         newII.push(ii);
