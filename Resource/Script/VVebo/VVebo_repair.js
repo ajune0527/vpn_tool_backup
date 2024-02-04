@@ -12,7 +12,7 @@ if (url.includes("remind/unread_count")) {
 } else if (url.includes("statuses/user_timeline")) {
   let uid = getUid(url) || $persistentStore.read("uid");
   url = url.replace("statuses/user_timeline", "profile/statuses/tab").replace("max_id", "since_id");
-  url = url + &containerid=230413${uid}_-_WEIBO_SECOND_PROFILE_WEIBO;
+  url = url + `&containerid=230413${uid}_-_WEIBO_SECOND_PROFILE_WEIBO`;
   $done({ url });
 } else if (url.includes("profile/statuses/tab")) {
   let data = JSON.parse($response.body);
