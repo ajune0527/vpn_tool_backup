@@ -1,3 +1,4 @@
 payload:
 # Gemini
   - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN,bard.google.com
