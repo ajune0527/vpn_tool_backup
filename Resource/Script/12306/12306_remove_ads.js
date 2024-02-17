@@ -1,3 +1,6 @@
+/*
+引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
+*/
 // 2024-02-17 09:45
 
 const url = $request.url;
