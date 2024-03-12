@@ -17,7 +17,7 @@ if (url.includes("/mobile.12306.cn/otsmobile/app/mgs/")) {
     // "com.cars.otsmobile.initCountry",
     // "com.cars.otsmobile.initNewSysCache",
     // "com.cars.otsmobile.initProvince",
-    "com.cars.otsmobile.integration.activityBanner", // 活动横幅
+    // "com.cars.otsmobile.integration.activityBanner", // 活动横幅
     "com.cars.otsmobile.memberInfo.getMemberQa", // 铁路会员 常见问题
     // "com.cars.otsmobile.memberInfo.integrationHomeInit", // 铁路会员 会员信息
     // "com.cars.otsmobile.newHomePage.getWeatherByStationCode", // 天气信息
