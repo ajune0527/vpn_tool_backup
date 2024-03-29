@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-03-29 20:22:37
+#!date = 2024-03-29 21:28:58
 
 [Rule]
 # 字节跳动 - 广告服务商
@@ -69,7 +69,7 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
 DOMAIN-KEYWORD, trace.video.qq.com, REJECT
-IP-CIDR, 47.110.187.87/32, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
 # 手机QQ
 DOMAIN, adsmind.gdtimg.com, REJECT
@@ -121,7 +121,7 @@ DOMAIN-SUFFIX, v1d.szbdyd.com, REJECT
 URL-REGEX, ^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$, REJECT
 
 # 中国移动
-IP-CIDR, 120.240.95.37/32, REJECT
+IP-CIDR, 120.240.95.37/32, REJECT, no-resolve
 
 # 中国联通
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
@@ -131,8 +131,8 @@ DOMAIN, ad.21cn.com, REJECT
 DOMAIN, ad.k.21cn.com, REJECT
 DOMAIN, admarket.21cn.com, REJECT
 DOMAIN, adshows.21cn.com, REJECT
-IP-CIDR, 122.229.8.47/32, REJECT
-IP-CIDR, 122.229.29.89/32, REJECT
+IP-CIDR, 122.229.8.47/32, REJECT, no-resolve
+IP-CIDR, 122.229.29.89/32, REJECT, no-resolve
 
 # 京东
 # 弃用地址
