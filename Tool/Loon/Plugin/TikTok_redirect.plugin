@@ -36,10 +36,14 @@ DOMAIN-KEYWORD, musical.ly, PROXY
 DOMAIN-KEYWORD, tiktok, PROXY
 USER-AGENT, TikTok*, PROXY
 
+[Rewrite]
+# 去广告
+^https:\/\/api-va\.tiktokv\.com\/api\/ad\/ reject-dict
+
 [Script]
 http-request ^https?:\/\/.+.(tiktokv|tiktokcdn).com\/.+(region\d?=CN|&mcc_mnc=\d+) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TikTok/TikTok_redirect.js, tag = TikTok解锁
 
 # http-response https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/(favorite|listcollection)) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TikTok/TikTok_remove_watermark.js, requires-body = true, tag = TikTok去水印
 
 [Mitm]
-hostname = *.byteoversea.com, *.tik-tokapi.com, *.tiktokv.com, *.tiktokcdn.com
+hostname = *.tiktokv.com, *.tiktokcdn.com
