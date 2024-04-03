@@ -12,6 +12,7 @@ let mccs = keymccs[lk] || "44023";
 // 疑似TikTok检测MitM的地址
 if (/(tnc|dm).+\.[^\/]+\.com\/\w+\/v\d\/\?/.test(url)) {
   url = url.replace(/\/\?/g, '');
+  console.log(url)
   const response = {
     status: 302,
     headers: { Location: url },
