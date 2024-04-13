@@ -1,9 +1,6 @@
 payload:
 # TikTok by 可莉
-# 2024-04-13 17:45:05
-  - DOMAIN,lf16-effectcdn.byteeffecttos-g.com
-  - DOMAIN,lf16-pkgcdn.pitaya-clientai.com
-  - DOMAIN,p16-tiktokcdn-com.akamaized.net
+# 2024-04-13 18:26:29
   - DOMAIN-SUFFIX,bytedapm.com
   - DOMAIN-SUFFIX,bytefcdn-oversea.com
   - DOMAIN-SUFFIX,bytefcdn-ttpeu.com
@@ -57,4 +54,7 @@ payload:
   - DOMAIN-KEYWORD,tiktokv
   - DOMAIN-KEYWORD,tiktokcdn
   - DOMAIN-KEYWORD,ttlivecdn
+  - DOMAIN-KEYWORD,-pkgcdn.pitaya-clientai.com
+  - DOMAIN-KEYWORD,-effectcdn.byteeffecttos-g.com
+  - DOMAIN-KEYWORD,-tiktokcdn-com.akamaized.net
   - USER-AGENT,TikTok
