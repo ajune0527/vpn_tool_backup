@@ -5,41 +5,9 @@
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TikTok.png
 #!select = 解锁地区, 台湾, 日本, 韩国, 泰国, 越南, 英国, 法国, 德国, 美国, 巴西, 俄罗斯, 墨西哥, 土耳其, 西班牙, 阿根廷, 新加坡, 菲律宾, 马来西亚
-#!date = 2024-04-13 15:27:45
+#!date = 2024-04-13 17:33:08
 
 [Rule]
-DOMAIN, tiktokcdn.com.atomile.com, PROXY
-DOMAIN, tiktokcdn-us.com.atomile.com, PROXY
-DOMAIN, abtest-sg-tiktok.byteoversea.com, PROXY
-DOMAIN, abtest-va-tiktok.byteoversea.com, PROXY
-DOMAIN, gts.byteoversea.net, PROXY
-DOMAIN, quic-tiktok-core-proxy-i18n-gcpva.byteoversea.net, PROXY
-DOMAIN, quic-tiktok-proxy-i18n-gcpva.byteoversea.net, PROXY
-DOMAIN, tiktok-lb-alisg.byteoversea.net, PROXY
-DOMAIN, tiktok-lb-maliva.byteoversea.net, PROXY
-DOMAIN, tiktok-platform-lb-alisg.byteoversea.net, PROXY
-DOMAIN, tiktok-platform-lb-maliva.byteoversea.net, PROXY
-DOMAIN, tiktokcdn.com.c.bytefcdn-oversea.com, PROXY
-DOMAIN, tiktokv.com.c.bytefcdn-oversea.com, PROXY
-DOMAIN, ttlivecdn.com.c.bytefcdn-oversea.com, PROXY
-DOMAIN, tiktokcdn.com.c.bytefcdn-ttpeu.com, PROXY
-DOMAIN, tiktokcdn.com.c.bytetcdn.com, PROXY
-DOMAIN, tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com, PROXY
-DOMAIN, p1-tt-ipv6.byteimg.com, PROXY
-DOMAIN, p1-tt.byteimg.com, PROXY
-DOMAIN, p26-tt.byteimg.com, PROXY
-DOMAIN, p3-tt-ipv6.byteimg.com, PROXY
-DOMAIN, p9-tt.byteimg.com, PROXY
-DOMAIN, p16-ad-sg.ibyteimg.com, PROXY
-DOMAIN, p16-tiktok-sg.ibyteimg.com, PROXY
-DOMAIN, p16-tiktok-va.ibyteimg.com, PROXY
-DOMAIN, p16-tiktok-va-h2.ibyteimg.com, PROXY
-DOMAIN, p16-va-tiktok.ibyteimg.com, PROXY
-DOMAIN, p16-h1-sign-va.ibyteimg.com, PROXY
-DOMAIN, p16-h1-sign-sg.ibyteimg.com, PROXY
-DOMAIN, p16-tiktok-sign-va-h2.ibyteimg.com, PROXY
-DOMAIN, sf16-ttcdn-tos.ipstatp.com, PROXY
-DOMAIN, lf1-ttcdn-tos.pstatp.com, PROXY
 DOMAIN, pull-f3-hs.pstatp.com, PROXY
 DOMAIN, pull-f5-hs.flive.pstatp.com, PROXY
 DOMAIN, pull-f5-hs.pstatp.com, PROXY
@@ -56,17 +24,14 @@ DOMAIN, pull-rtmp-f6-hs.pstatp.com, PROXY
 DOMAIN, pull-rtmp-l1-hs.pstatp.com, PROXY
 DOMAIN, pull-rtmp-l1-mus.pstatp.com, PROXY
 DOMAIN, pull-rtmp-l6-hs.pstatp.com, PROXY
-DOMAIN, sf1-ttcdn-tos.pstatp.com, PROXY
-DOMAIN, sf6-ttcdn-tos.pstatp.com, PROXY
-DOMAIN, tiktokcdn.com.qlivecdn.com, PROXY
-DOMAIN, tiktokcdn.com.rocket-cdn.com, PROXY
-DOMAIN, tiktokcdn.com.tlivepush.com, PROXY
-DOMAIN, tiktokv.com.c.worldfcdn.com, PROXY
-DOMAIN, tiktokcdn.com.c.worldfcdn.com, PROXY
-DOMAIN, ttlivecdn.com.c.worldfcdn.com, PROXY
-DOMAIN, tiktokv.com.c.worldfcdn2.com, PROXY
-DOMAIN, tiktokcdn-us.com.c.worldfcdn2.com, PROXY
+DOMAIN-SUFFIX, bytefcdn-oversea.com, PROXY
+DOMAIN-SUFFIX, bytefcdn-ttpeu.com, PROXY
 DOMAIN-SUFFIX, byteglb.com, PROXY
+DOMAIN-SUFFIX, byteigtm.com, PROXY
+DOMAIN-SUFFIX, byteoversea.com, PROXY
+DOMAIN-SUFFIX, byteoversea.net, PROXY
+DOMAIN-SUFFIX, bytetcdn.com, PROXY
+DOMAIN-SUFFIX, ibyteimg.com, PROXY
 DOMAIN-SUFFIX, isnssdk.com, PROXY
 DOMAIN-SUFFIX, muscdn.com, PROXY
 DOMAIN-SUFFIX, musemuse.cn, PROXY
@@ -96,6 +61,12 @@ DOMAIN-SUFFIX, ttlivecdn.com, PROXY
 DOMAIN-SUFFIX, ttoversea.net, PROXY
 DOMAIN-SUFFIX, ttoverseaus.net, PROXY
 DOMAIN-SUFFIX, ttwstatic.com, PROXY
+DOMAIN-KEYWORD, tiktok, PROXY
+DOMAIN-KEYWORD, tiktokv, PROXY
+DOMAIN-KEYWORD, tiktokcdn, PROXY
+DOMAIN-KEYWORD, ttlivecdn.com, PROXY
+DOMAIN-KEYWORD, -ttcdn-tos, PROXY
+DOMAIN-KEYWORD, p16-ttam-, PROXY
 
 [Rewrite]
 # 去广告
