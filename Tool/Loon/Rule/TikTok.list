@@ -1,5 +1,5 @@
 # TikTok by 可莉
-# 2024-04-13 15:10:32
+# 2024-04-13 15:27:14
 DOMAIN, tiktokcdn.com.atomile.com
 DOMAIN, tiktokcdn-us.com.atomile.com
 DOMAIN, abtest-sg-tiktok.byteoversea.com
@@ -24,10 +24,12 @@ DOMAIN, p3-tt-ipv6.byteimg.com
 DOMAIN, p9-tt.byteimg.com
 DOMAIN, p16-ad-sg.ibyteimg.com
 DOMAIN, p16-tiktok-sg.ibyteimg.com
-DOMAIN, p16-tiktok-sign-va-h2.ibyteimg.com
-DOMAIN, p16-tiktok-va-h2.ibyteimg.com
 DOMAIN, p16-tiktok-va.ibyteimg.com
+DOMAIN, p16-tiktok-va-h2.ibyteimg.com
 DOMAIN, p16-va-tiktok.ibyteimg.com
+DOMAIN, p16-h1-sign-va.ibyteimg.com
+DOMAIN, p16-h1-sign-sg.ibyteimg.com
+DOMAIN, p16-tiktok-sign-va-h2.ibyteimg.com
 DOMAIN, sf16-ttcdn-tos.ipstatp.com
 DOMAIN, lf1-ttcdn-tos.pstatp.com
 DOMAIN, pull-f3-hs.pstatp.com
