@@ -1,14 +1,12 @@
 # TikTok by 可莉
-# 2024-04-14 02:43:40
-DOMAIN, v16m-default.akamaized.net // 视频下载
-sf16-sg-default.akamaized.net
-sf16-sg-default.akamaized.net
+# 2024-04-14 02:56:40
 DOMAIN-SUFFIX, bytedapm.com
 DOMAIN-SUFFIX, bytefcdn-oversea.com
 DOMAIN-SUFFIX, bytefcdn-ttpeu.com
 DOMAIN-SUFFIX, bytegecko-i18n.com
 DOMAIN-SUFFIX, bytegecko.com
 DOMAIN-SUFFIX, byteglb.com
+DOMAIN-SUFFIX, byteimg.com
 DOMAIN-SUFFIX, byteigtm.com
 DOMAIN-SUFFIX, byteoversea.com
 DOMAIN-SUFFIX, byteoversea.net
@@ -57,7 +55,8 @@ DOMAIN-KEYWORD, tiktok
 DOMAIN-KEYWORD, tiktokv
 DOMAIN-KEYWORD, tiktokcdn
 DOMAIN-KEYWORD, ttlivecdn
-DOMAIN-KEYWORD, -pkgcdn.pitaya-clientai.com
+DOMAIN-KEYWORD, -default.akamaized.net
 DOMAIN-KEYWORD, -effectcdn.byteeffecttos-g.com
 DOMAIN-KEYWORD, -tiktokcdn-com.akamaized.net
+DOMAIN-KEYWORD, -pkgcdn.pitaya-clientai.com
 USER-AGENT, TikTok
