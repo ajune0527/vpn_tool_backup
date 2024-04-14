@@ -4,29 +4,8 @@ payload:
 # GitLab
   - DOMAIN-SUFFIX,gitlab.com
 #Emby公益服
-# ACA公益服
-  - DOMAIN,emby.aca.best
-  - DOMAIN,porn.aca.best
-# TreeDiagram
-  - DOMAIN,789.123456.al
-# 垃圾影音
-  - DOMAIN,free.xmsl.org
-  - DOMAIN,cf.xmsl.org
-# Misty
-  - DOMAIN,misty.ltd
-# Odyssey+
-  - DOMAIN-SUFFIX,odysseyplus.site
-# BDD
-  - DOMAIN,media.bddup.com
 # SYN
   - DOMAIN-SUFFIX,811920.xyz
-# Lend
-#  - DOMAIN,emby.lcloud.wiki
-# PiliPili
-  - DOMAIN,emby.pilipiliultra.top
-  - DOMAIN,emby.pilipiliultra.com
-# NMEmby
-  - DOMAIN,film.ohhhh.org
 #Steam用于判断用户地区分配下载CDN的地址
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN,cm.steampowered.com
