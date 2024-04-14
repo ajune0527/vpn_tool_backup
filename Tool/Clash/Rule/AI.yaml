@@ -53,7 +53,6 @@ payload:
   - DOMAIN,strict.bing.com
   - DOMAIN,sydney.bing.com
   - DOMAIN,www.bing.com
-  - DOMAIN,www2.bing.com
   - DOMAIN,www.bingapis.com
   - DOMAIN-SUFFIX,bing.com
 
